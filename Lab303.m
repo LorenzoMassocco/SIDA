@@ -62,7 +62,7 @@ orders_armax = [2 2 1 1];
 m_armax = armax(data,orders_armax);
 
 % Plot the coefficient of the estimated model
-fprintf( 'Fden = [%1.2f, %1.2f, %1.2f]\n',m_armax.a(1),m_armax.a(2), m_armax.a(3)); % A(z)
+fprintf( 'Fden = Gden = [%1.2f, %1.2f, %1.2f]\n',m_armax.a(1),m_armax.a(2), m_armax.a(3)); % A(z)
 fprintf( 'Fnum = [%1.2f, %1.2f, %1.2f]\n',m_armax.b(1),m_armax.b(2), m_armax.b(3)); % B(z)
 fprintf( 'Gnum = [%1.2f, %1.2f]\n',m_armax.c(1),m_armax.c(2)); % C(z)
 fprintf('variance = %1.2f\n',m_armax.NoiseVariance); % sigma^2
@@ -98,7 +98,7 @@ orders_armax2 = [3 3 1 1];
 m_armax2 = armax(data,orders_armax2);
 
 % Plot the coefficient of the estimated model
-fprintf( 'Fden = [%1.2f, %1.2f, %1.2f, %1.2f ]\n',m_armax2.a(1),m_armax2.a(2), m_armax2.a(3), m_armax2.a(4)); % A(z)
+fprintf( 'Fden = Gden = [%1.2f, %1.2f, %1.2f, %1.2f ]\n',m_armax2.a(1),m_armax2.a(2), m_armax2.a(3), m_armax2.a(4)); % A(z)
 fprintf( 'Fnum = [%1.2f, %1.2f, %1.2f, %1.2f]\n',m_armax2.b(1), m_armax2.b(2), m_armax2.b(3), m_armax2.b(4)); % B(z)
 fprintf( 'Gnum = [%1.2f, %1.2f]\n',m_armax2.c(1),m_armax2.c(2)); % C(z)
 fprintf('variance = %1.2f\n',m_armax2.NoiseVariance); % sigma^2
