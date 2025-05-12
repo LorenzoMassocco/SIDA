@@ -44,7 +44,7 @@ orders_arx = [2 2 1];
 m_arx = arx(data,orders_arx);
 
 % Plot the coefficients of the estimated model
-fprintf( 'Fden = [%1.2f, %1.2f, %1.2f]\n',m_arx.a(1),m_arx.a(2), m_arx.a(3)); % A(z)
+fprintf( 'Fden = Gden = [%1.2f, %1.2f, %1.2f]\n',m_arx.a(1),m_arx.a(2), m_arx.a(3)); % A(z)
 fprintf( 'Fnum = [%1.2f, %1.2f, %1.2f]\n',m_arx.b(1),m_arx.b(2), m_arx.b(3)); % B(z)
 fprintf('variance = %1.2f\n',m_arx.NoiseVariance); % sigma^2
 fprintf('\n');
@@ -80,7 +80,7 @@ orders_arx2 = [3 3 1];
 m_arx2 = arx(data,orders_arx2);
 
 % Plot the coefficients of the estimated model
-fprintf( 'Fden = [%1.2f, %1.2f, %1.2f, %1.2f]\n',m_arx2.a(1),m_arx2.a(2), m_arx2.a(3), m_arx2.a(4)); % A(z)
+fprintf( 'Fden = Gden = [%1.2f, %1.2f, %1.2f, %1.2f]\n',m_arx2.a(1),m_arx2.a(2), m_arx2.a(3), m_arx2.a(4)); % A(z)
 fprintf( 'Fnum = [%1.2f, %1.2f, %1.2f, %1.2f]\n',m_arx2.b(1),m_arx2.b(2), m_arx2.b(3), m_arx2.b(4)); % B(z)
 fprintf('variance = %1.2f\n',m_arx2.NoiseVariance); % sigma^2
 fprintf('\n');
